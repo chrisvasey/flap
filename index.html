@@ -1,0 +1,105 @@
+<head>
+  <title>flap</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">flap</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Link</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>Welcome FirstName!</h1>
+		{{> hello}}
+		<p>
+			<a class="btn btn-primary btn-lg">Learn more</a>
+		</p>
+		<p>
+			<a class="btn btn-primary btn-lg">Click here to join the WiFi</a>
+		</p>
+	</div>
+</div>
+	{{> checkIn}}
+	{{> recent}}
+  
+</body>
+
+<template name="hello">
+  <button class="btn btn-primary">Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="checkIn">
+	<div class="container">
+		{{> userCard}}
+		{{> userCard}}
+		{{> userCard}}
+	</div>
+</template>
+
+<template name="userCard">
+	<div class="userCardWarp col-md-4 col-sx12">
+		<div class="card panel panel-default">
+			<div class="panel-body">
+				<div class="cardHeader">
+					<div class="userPhoto"></div>
+					<!-- <div class="indWrap">
+						<h1>test</h1>
+					</div> -->
+				</div>
+			   <h1>firstName</h1>
+			   <p>Last seen: 16 Hours ago</p>
+			   <p>Times visited: 13</p>
+			   <p>Rank: 6th</p>
+			</div>
+		</div>	
+	</div>
+</template>
+
+<template name="recent">
+	<div class="recent">
+		<div class="container">
+		<h3>Recent guests:</h3>
+			{{> recentUsers}}
+			{{> recentUsers}}
+			{{> recentUsers}}
+			{{> recentUsers}}	
+			{{> recentUsers}}
+			{{> recentUsers}}
+		</div>
+	</div>
+</template>
+
+<template name="recentUsers">
+	<div class="recentUsers col-md-1 col-md-12">
+		<div class="recentThumb">
+			
+		</div>
+		<p>firstName</p>
+	</div>
+</template>
