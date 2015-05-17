@@ -6,16 +6,16 @@ if (Users.find().count() === 0) {
     lastVisit: "15/05/2015",
     timesVisited: "13",
     active: "true",
-    createdAt: new Date(),
     createdAt: new Date()
   });
 
   Users.insert({
     firstName: "Grace",
-    lastName: "Booyd",
+    lastName: "Boyd",
     lastVisit: "16/05/2015",
     timesVisited: "6",
-    active: "false"
+    active: "false",
+    createdAt: new Date()
   });
 
   Users.insert({
@@ -32,7 +32,8 @@ if (Users.find().count() === 0) {
     lastName: "Tang",
     lastVisit: "17/05/2015",
     timesVisited: "9",
-    active: "false"
+    active: "false",
+    createdAt: new Date()
   });
 
   Users.insert({
@@ -49,6 +50,7 @@ if (Users.find().count() === 0) {
     lastName: "Moss",
     lastVisit: "20/04/2015",
     timesVisited: "13",
-    active: "false"
+    active: "false",
+    createdAt: new Date()
   });
 }

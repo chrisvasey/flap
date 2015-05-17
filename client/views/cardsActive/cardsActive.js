@@ -1,16 +1,24 @@
 //Mongo Data
 Template.cardList.helpers({
   users: function() {
-  	return Users.find({ active: "true"});
+  	var list = Users.find({ active: true});
+
+  	this.list = list;
+
+  	return list
   }
 });
 
 // Template.cardItem.helpers({
-// 	activeTime: function() {
-// 		current = Users.find({ active: "true"});
-// 		return current.firstName();
-// 	}
+//   activeTime: function() {
+//   	list = this.list.fetch()
+
+//     return time[0].createdAt;
+//   }
 // });
 
-timeSinceActive = moment("2015-05-17T17:49:28.022Z").fromNow();
+
+
+//example
+timeSinceActive = moment("2015-05-17T13:49:28.022Z").fromNow();
 console.log(timeSinceActive);
