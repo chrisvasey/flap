@@ -1,14 +1,30 @@
-<template name="header">
+<template name="headerSuccess">
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Welcome FirstName!</h1>
-			{{> hello}}
 			<p>
-				<a class="btn btn-primary btn-lg">Learn more</a>
+				This is the 6th time you have visited. <br>
+				You last visited 18 days ago.
 			</p>
 			<p>
-				<a class="btn btn-primary btn-lg">Click here to join the WiFi</a>
+				<a class="btn btn-primary btn-lg">Click here to continue to Google</a>
 			</p>
 		</div>
 	</div>
 </template>
+
+<template name="headerLogin">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hello stranger!</h1>
+			<p>
+				Welcome to the Flat28 intranet. <br>
+				because we are geeky and love to show off, you will need to log in before using the WiFi
+			</p>
+			<p>
+				<a href="https://www.google.co.uk/" class="btn btn-primary btn-lg">Login</a>
+			</p>
+		</div>
+	</div>
+</template>
+
