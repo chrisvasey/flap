@@ -1,15 +1,19 @@
 var userData = [
 	{
-		firstName: "Chris"
+		firstName: "Chris",
+		lastName: "Vasey"
 	},
 	{
-		firstName: "Grace"
+		firstName: "Grace",
+		lastName: "Boyd"
 	},
 	{
-		firstName: "Dan"
+		firstName: "Dan",
+		lastName: "Vasey"
 	},
 	{
-		firstName: "Pete"
+		firstName: "Pete",
+		lastName: "Sedgewick"
 	}
 ];
 
