@@ -39,6 +39,6 @@ if (Users.find().count() === 0) {
     firstName: "Lucie",
     lastName: "Moss",
     lastVisit: "20/04/2015",
-    timesVisted: "11"
+    timesVisted: "13"
   });
 }

@@ -1,3 +1,5 @@
+
+//static test
 var userData = [
 	{
 		firstName: "Chris",
@@ -17,6 +19,15 @@ var userData = [
 	}
 ];
 
+// Template.cardList.helpers({
+//   users: userData
+//   }
+// });
+
+
+//Mongo Data
 Template.cardList.helpers({
-  users: userData
+  users: function() {
+  	return Users.find();
+  }
 });
