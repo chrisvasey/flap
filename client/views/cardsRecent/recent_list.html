@@ -1,0 +1,10 @@
+<template name="recentList">
+	<div class="recent">
+		<div class="container">
+		<h3>Recent guests:</h3>
+			{{#each users}}
+				{{> recentItem}}
+			{{/each}}
+		</div>
+	</div>
+</template>
