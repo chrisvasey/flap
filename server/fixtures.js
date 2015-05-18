@@ -3,54 +3,54 @@ if (Users.find().count() === 0) {
   Users.insert({
     firstName: "Chris",
     lastName: "Vasey",
-    lastVisit: "15/05/2015",
+    lastActive: new Date(),
     timesVisited: "13",
-    active: "true",
+    active: true,
     createdAt: new Date()
   });
 
   Users.insert({
     firstName: "Grace",
     lastName: "Boyd",
-    lastVisit: "16/05/2015",
+    lastActive: new Date("2015-05-17T15:35:59.301Z"),
     timesVisited: "6",
-    active: "false",
+    active: false,
     createdAt: new Date()
   });
 
   Users.insert({
     firstName: "Dan",
     lastName: "Vasey",
-    lastVisit: "17/05/2015",
+    lastActive: new Date("2015-05-18T08:35:59.301Z"),
     timesVisited: "34",
-    active: "true",
+    active: true,
     createdAt: new Date()
   });
 
   Users.insert({
     firstName: "Jade",
     lastName: "Tang",
-    lastVisit: "17/05/2015",
+    lastActive: new Date("2015-04-15T14:56:59.301Z"),
     timesVisited: "9",
-    active: "false",
+    active: false,
     createdAt: new Date()
   });
 
   Users.insert({
     firstName: "Peter",
     lastName: "Sedgewick",
-    lastVisit: "15/05/2015",
+    lastActive: new Date("2015-05-06T14:56:59.301Z"),
     timesVisited: "15",
-    active: "true",
+    active: true,
     createdAt: new Date()
   });
 
   Users.insert({
     firstName: "Lucie",
     lastName: "Moss",
-    lastVisit: "20/04/2015",
+    lastActive: new Date("2015-03-22T14:56:59.301Z"),
     timesVisited: "13",
-    active: "false",
+    active: false,
     createdAt: new Date()
   });
 }

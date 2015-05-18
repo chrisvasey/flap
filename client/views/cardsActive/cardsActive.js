@@ -12,7 +12,7 @@ Template.cardList.helpers({
 //Last Seen
 Template.cardItem.helpers({
 	activeTime: function() {
-		timeSinceActive = moment(this.createdAt).fromNow();
+		timeSinceActive = moment(this.lastActive).fromNow();
 		return timeSinceActive;
 	}
 });
