@@ -9,16 +9,10 @@ Template.cardList.helpers({
   }
 });
 
-// Template.cardItem.helpers({
-//   activeTime: function() {
-//   	list = this.list.fetch()
-
-//     return time[0].createdAt;
-//   }
-// });
-
-
-
-//example
-timeSinceActive = moment("2015-05-17T13:49:28.022Z").fromNow();
-console.log(timeSinceActive);
+//Last Seen
+Template.cardItem.helpers({
+	activeTime: function() {
+		timeSinceActive = moment(this.createdAt).fromNow();
+		return timeSinceActive;
+	}
+});
